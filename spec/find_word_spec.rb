@@ -16,8 +16,8 @@ describe('String#findword') do
   expect(("Moses supposes his toeses are roses but moses supposes erroneously").findword("moses")).to(eq(2))
   end
 
-  it("will recognize a word used five times and return an error statement")do
-  expect(("yes yes yes yes yes").findword("yes")).to(eq("You use that word waay too much"))
+  it("will recognize a word used eight times and return an error statement")do
+  expect(("yes yes yes yes yes yes yes yes").findword("yes")).to(eq("You use that word waay too much"))
   end
 
   it("will remove all punctuation and return number of times word is used")do

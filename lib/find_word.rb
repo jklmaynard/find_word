@@ -12,7 +12,7 @@ class String
       end
     totals_array.length()
 
-      if totals_array.length().>=(5)
+      if totals_array.length().>=(8)
           superfluous
       else
           totals_array.length()

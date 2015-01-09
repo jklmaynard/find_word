@@ -1,0 +1,17 @@
+FIND WORD READ ME
+
+WELCOME!
+
+I hope you'll have as much fun messing around with this application as I did making it.
+
+The method is fairly simple: it is performed on a String class and takes one argument, the word the user wishes to check how many times it has been used in a sentence or paragraph.
+
+The program takes the sentence, removes all punctuation, capitalizes the remaining words, and splits them inside an array.  This array is put through an each loop, where each element is examined to see if it matches the argument (also capitalized).  If it matches, it is pushed into a new array.  This new array pushes out a length (the number of words inside the array) or an error message (see below).
+
+Error Message: If the word is used less than 8 times, no error message will appear. However, if the user uses a word 8 times or more, the user will be scorned by a jpg of Inigo Montoya for using a word superfluously.  Because, let's face it, no word should be used more than 8 times in a single paragraph.  Really.
+
+In setup, you'll see that there is a number_of_times.erb and a superfluous.erb.  The user will be directed to one or the other at the get(/number_of_times) block.  This is performed through an if block.
+
+Liscense to Git'r Done.
+
+Copyright James Maynard 2015
