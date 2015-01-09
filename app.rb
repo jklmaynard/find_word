@@ -11,5 +11,9 @@ get('/number_of_times') do
   @sentence = params.fetch('text')
   @word = params.fetch('word')
   @number_of_times = @sentence.findword(@word)
-  erb(:number_of_times)
+    if @number_of_times == "You use that word waay too much"
+      erb(:superfluous)
+    else
+      erb(:number_of_times)
+    end
 end
