@@ -9,5 +9,11 @@ class String
         end
       end
     search_word_array.length()
+
+      if search_word_array.length().>=(5)
+          "You use that word waay too much"
+      else
+          search_word_array.length()
+      end
   end
 end
