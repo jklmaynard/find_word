@@ -9,6 +9,5 @@ class String
         end
       end
     search_word_array.length()
-
   end
 end
