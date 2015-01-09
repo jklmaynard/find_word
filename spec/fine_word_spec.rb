@@ -3,7 +3,16 @@ require('find_word')
 require('pry')
 
 describe('String#findword') do
+
   it("will find the word 'one' once and return the fix number 1") do
   expect(("word one").findword("one")).to(eq(1))
+  end
+
+  it("will find the word 'one' twice and return the fix number 2") do
+  expect(("word one one").findword("one")).to(eq(2))
+  end
+
+  it("will recognize capitalized & lowercase words as the same and return how many times the word appears") do
+  expect(("Moses supposes his toeses are roses but moses supposes erroneously").findword("moses")).to(eq(2))
   end
 end
