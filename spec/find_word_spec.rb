@@ -20,4 +20,8 @@ describe('String#findword') do
   expect(("yes yes yes yes yes").findword("yes")).to(eq("You use that word waay too much"))
   end
 
+  it("will remove all punctuation and return number of times word is used")do
+  expect(("this, is my sentence, it is!").findword("is")).to(eq(2))
+  end
+
 end
